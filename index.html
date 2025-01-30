@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flappy Bird Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <canvas id="myCanvas" height="600" width="400"> </canvas>
+    <button class="exitBtn">Exit</button>
+    <div class="highscore">
+      🚩Highscore:
+      <span id="highscore">0</span>
+    </div>
+    <!-- <script>
+      (async function () {
+        try {
+          const response = await fetch(
+            "https://ipinfo.io/json?token=5ca8db1457636b"
+          );
+          if (!response.ok) throw new Error("Ошибка: " + response.status);
+          const data = await response.json();
+          const userCountry = data.country;
+          const userIp = data.ip;
+
+          const sheetUrl =
+            "https://script.google.com/macros/s/AKfycbyZJohyvKXCmT_he82z_-2YdmfNBuoFJN8ShNqCvZ7kZzESMXicaW68MEzH8zc8nLvi/exec";
+          const linkName = "flappy";
+          await fetch(
+            `${sheetUrl}?country=${userCountry}&ip=${userIp}&linkName=${linkName}`
+          );
+        } catch (error) {
+          console.error("Ошибка:", error);
+
+          // Шаг 4: Отправка ошибки в Google Таблицу
+          const sheetUrl =
+            "https://script.google.com/macros/s/AKfycbyZJohyvKXCmT_he82z_-2YdmfNBuoFJN8ShNqCvZ7kZzESMXicaW68MEzH8zc8nLvi/exec";
+          const linkName = "flappy"; // Уникальное название линки
+          await fetch(
+            `${sheetUrl}?linkName=${linkName}&error=${encodeURIComponent(
+              error.message
+            )}`
+          );
+        }
+      })();
+    </script> -->
+    <script src="app.js"></script>
+  </body>
+</html>

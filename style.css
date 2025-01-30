@@ -1,0 +1,52 @@
+html {
+  height: 100%;
+}
+body {
+  font-family: "Pacifico";
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  height: 100%;
+}
+
+canvas {
+  border: 1x solid #0a3cda;
+}
+#myCanvas {
+  width: 100%;
+  height: 100%;
+  background: url("http://s2js.com/img/etc/flappyback.png");
+  background-size: cover;
+}
+.exitBtn {
+  position: absolute;
+  top: 5px;
+  right: 2px;
+  z-index: 1000;
+  color: #fff;
+  padding: 0;
+  background: transparent;
+  border: 2px solid #fff;
+  cursor: pointer;
+  padding: 4px 6px;
+  letter-spacing: 0.8px;
+}
+
+.exitBtn:active {
+  transform: scale(0.9);
+}
+
+.highscore {
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  z-index: 1000;
+  font-family: "Courier New", Courier, monospace;
+  color: #fff;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 4px 6px;
+  letter-spacing: 0.8px;
+}
